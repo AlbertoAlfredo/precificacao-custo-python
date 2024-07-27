@@ -24,6 +24,11 @@ Requisitos:
 
 Clone o repositório para o seu computador.
 Instale os pacotes Python necessários.
+
+```bash 
+pip install -r requirements.txt 
+```
+
 Execute o script main.py.
 Siga as instruções na tela para inserir as informações do produto.
 O sistema irá calcular e exibir o preço de custo do produto.
@@ -31,6 +36,10 @@ O sistema irá calcular e exibir o preço de custo do produto.
 ## Contribuindo:
 
 Você é bem-vindo para contribuir com este projeto! Sinta-se à vontade para enviar issues ou pull requests com sugestões ou correções.
+Para salvar os pacotes novos não se esqueça de salvar dentro do requirements.txt
+```bash
+pip freeze > requirements.txt
+```
 
 ## Licença:
 
