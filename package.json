@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "@pyscript/core": "^0.5.1"
+    "@pyscript/core": "^0.5.16"
   }
 }
