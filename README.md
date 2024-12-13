@@ -23,6 +23,9 @@ Requisitos:
 ## Materialize css
 https://materializecss.com/
 
+## HTMX
+https://htmx.org/
+
 ## Como usar:
 
 Clone o repositório para o seu computador.

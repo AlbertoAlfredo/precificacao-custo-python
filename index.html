@@ -19,6 +19,39 @@
       </ul>
     </div>
   </nav>
+  <div>
+    <h1>Salvar informações no Cache com PyScript</h1>
+
+    <h3 for="info">Digite a informação:</h3>
+    <p>Chave = <input type="text" id="chave" name="info"> </p>
+    <p>Valor = <input type="text" id="valor" name="info"> </p>
+    <br><br>
+
+    <button id="salvar"
+    hx-trigger="click"
+    hx-target="#parent-div"
+    hx-swap="outerHTML"
+    >Salvar no LocalStorage</button>
+
+    <div id="teste"></div>
+
+    <script type="mpy">
+        from pyscript import when, display
+        from js import localStorage, document, console
+
+        def salvar():
+          chave = document.getElementById("chave").value
+          valor = document.getElementById("valor").value
+          localStorage.setItem(chave, valor)
+
+        @when("click", "#salvar")
+        def click_handler(event):
+            salvar()
+            console.log(localStorage);
+
+        
+    </script>
+  </div>
 
  
 
@@ -29,5 +62,6 @@
   </script>
 </body>
 <script type="module" src="src/scripts/pyscript/core.js"></script>
+<script type="module" src="src/scripts/htmx/htmx.js"></script>
 <script type="module" src="src/scripts/materialize/js/materialize.js"></script>
 </html>

@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@pyscript/core": "^0.5.16"
+    "@pyscript/core": "^0.5.16",
+    "htmx.org": "^2.0.3"
   }
 }
